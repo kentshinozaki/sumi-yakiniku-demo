@@ -394,7 +394,7 @@ ul, ol { list-style: none; padding: 0; }
 .dining__img--tall .parallax { aspect-ratio: 4 / 5; overflow: hidden; }
 .dining__img--tall img { width: 100%; height: 115%; object-fit: cover; object-position: 40% center; }
 .dining__img--small { grid-column: 9 / span 4; }
-.dining__img--small img { aspect-ratio: 1; width: 100%; object-fit: cover; }
+.dining__img--small img { aspect-ratio: 1; width: 100%; height: auto; object-fit: cover; }
 .dining__img figcaption span { font-family: var(--mincho); font-style: normal; font-size: 12px; margin-left: 8px; }
 .dining__private { grid-column: 9 / span 4; margin-top: 40px; display: grid; gap: 18px; justify-items: start; }
 .dining__private h3 { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.15; }

@@ -13,6 +13,6 @@ Photos from [Unsplash](https://unsplash.com), free to use under the [Unsplash Li
 | story-fire.jpg | @yula33 | https://unsplash.com/photos/q_xW-2ICvfA |
 | story-craft.jpg | thapanee srisawat (@noonths) | https://unsplash.com/photos/ahnczgYo2Fo |
 | dining-counter.jpg | @melisystem | https://unsplash.com/photos/kNhGrbiH7AY |
-| dining-shoji.jpg | F aint (@faintsam) | https://unsplash.com/photos/wW0Wa4SRtEU |
+| dining-private.jpg | 5010 (@isoten) | https://unsplash.com/photos/MbvEpVcMeH4 |
 
 `grill-close.jpg` and `wagyu-plate.jpg` are Kent's own images. `poster.jpg` is a frame from the hero video.
