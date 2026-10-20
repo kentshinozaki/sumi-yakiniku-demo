@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUMI 炭 | 八王子 炭火焼肉 — The Art of Wagyu, Refined by Fire</title>
+  <meta name="description" content="SUMI 炭 is a fictional, intimate Japanese yakiniku restaurant in Hachioji, Tokyo. Japanese wagyu, binchotan charcoal and quiet hospitality. Portfolio concept website.">
+  <meta name="theme-color" content="#10100F">
+  <meta property="og:title" content="SUMI 炭 | 八王子 炭火焼肉">
+  <meta property="og:description" content="The Art of Wagyu, Refined by Fire. A portfolio concept for a fictional yakiniku restaurant in Hachioji, Tokyo.">
+  <meta property="og:image" content="assets/img/poster.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="SUMI 炭, back to top">
+      <span class="nav__kanji" aria-hidden="true">炭</span>
+      <span class="nav__word">SUMI</span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#philosophy">Our Philosophy</a>
+      <a href="#wagyu">The Wagyu</a>
+      <a href="#dining">Dining</a>
+      <a href="#menu">Menu</a>
+      <a href="#access">Access</a>
+    </nav>
+    <a href="#reserve" class="nav__reserve">Reservation <span aria-hidden="true">予約</span></a>
+    <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#philosophy"><small>01</small>Our Philosophy</a>
+      <a href="#wagyu"><small>02</small>The Wagyu</a>
+      <a href="#dining"><small>03</small>Dining</a>
+      <a href="#menu"><small>04</small>Menu</a>
+      <a href="#access"><small>05</small>Access</a>
+      <a href="#reserve" class="mobile-menu__reserve"><small>—</small>Reservation 予約</a>
+    </nav>
+    <p class="mobile-menu__foot">HACHIOJI, TOKYO · 35.6558° N, 139.3389° E</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero__media">
+        <!-- Two copies of the same forward-only clip take turns, with a soft fade between them, so the smoke keeps rising and never plays backward. The poster shows while it loads. -->
+        <div class="hero__reel">
+          <video class="hero__video is-active" autoplay muted playsinline preload="auto" poster="assets/img/poster.jpg" aria-hidden="true">
+            <source src="assets/video/sumi-hero-loop.mp4" type="video/mp4">
+          </video>
+          <video class="hero__video" muted playsinline preload="auto" aria-hidden="true">
+            <source src="assets/video/sumi-hero-loop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__meta" aria-hidden="true">
+        <span>Chapter 00</span>
+        <span>35.6558° N · 139.3389° E</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="label hero__loc reveal-load" style="--d:.2s">HACHIOJI, TOKYO <span class="label__jp">八王子</span></p>
+        <h1 class="hero__title">
+          <span class="hero__jp reveal-load" style="--d:.45s">炭火が引き出す、<br>和牛の真髄。</span>
+          <span class="hero__en reveal-load" style="--d:.75s">The Art of Wagyu, <em>Refined by Fire.</em></span>
+        </h1>
+        <p class="hero__intro reveal-load" style="--d:1s">An intimate counter and a handful of private rooms. Japanese wagyu, white charcoal and a quiet kind of hospitality, a few minutes from Hachioji Station.</p>
+        <div class="hero__actions reveal-load" style="--d:1.2s">
+          <a href="#reserve" class="btn btn--light">Reserve a Table</a>
+          <a href="#philosophy" class="link-arrow">Discover SUMI</a>
+        </div>
+      </div>
+
+      <a href="#philosophy" class="hero__scroll" aria-label="Scroll to next section">
+        <span>Scroll</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="philosophy section" id="philosophy">
+      <div class="philosophy__marker" aria-hidden="true">01</div>
+      <div class="philosophy__text reveal">
+        <p class="label">Our Philosophy <span class="label__jp">哲学</span></p>
+        <h2 class="h-jp">一枚の和牛に、<br>向き合う。</h2>
+        <p class="philosophy__en serif-lead">One cut of wagyu, given our full attention.</p>
+        <div class="philosophy__body">
+          <p class="jp-body">良い焼肉は、良い肉だけでは完成しません。部位の見極め、炭の温度、焼き上げの一瞬、そして食卓を包むおもてなし。そのすべてが揃ったとき、和牛は本来の味を語り始めます。</p>
+          <p>Great yakiniku is not simply about premium ingredients. It is the balance of the cut, the heat of the charcoal, the timing of the grill, and the hospitality that surrounds the meal. When all four meet, wagyu speaks for itself.</p>
+        </div>
+        <ol class="pillars">
+          <li><span>i</span>The Cut <em>部位</em></li>
+          <li><span>ii</span>The Charcoal <em>炭</em></li>
+          <li><span>iii</span>The Moment <em>焼き</em></li>
+          <li><span>iv</span>The Table <em>もてなし</em></li>
+        </ol>
+      </div>
+      <figure class="philosophy__image reveal-img">
+        <div class="parallax" data-speed="0.08"><img src="assets/img/smoke.jpg" alt="Smoke rising from wagyu grilling over glowing charcoal" loading="lazy" width="720" height="720"></div>
+        <figcaption>Fig. 01 — Smoke, charcoal, patience.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ WAGYU ============ -->
+    <section class="wagyu section section--ivory" id="wagyu">
+      <header class="section-head reveal">
+        <p class="label">02 · The Wagyu <span class="label__jp">和牛</span></p>
+        <h2 class="h-serif">Marbled like <em>snow on stone.</em></h2>
+        <p class="section-head__note">Select cuts of Japanese wagyu, chosen each morning and cut in-house to order.<sup>*</sup></p>
+      </header>
+
+      <div class="wagyu__grid">
+        <article class="wagyu__item wagyu__item--a reveal">
+          <figure class="img-hover"><img src="assets/img/wagyu-plate.jpg" alt="Thin slices of richly marbled raw wagyu arranged on a ceramic plate" loading="lazy" width="560" height="240"></figure>
+          <div class="wagyu__copy">
+            <span class="num">I</span>
+            <h3>Japanese Wagyu <em>和牛</em></h3>
+            <p>Fine, even marbling that melts at body temperature. Sliced thin, it turns translucent on the grill in seconds, with a sweetness that lingers.</p>
+          </div>
+        </article>
+
+        <article class="wagyu__item wagyu__item--b reveal">
+          <figure class="img-hover"><img src="assets/img/grill-close.jpg" alt="Two cuts of wagyu searing on a wire grill above orange charcoal" loading="lazy" width="480" height="600"></figure>
+          <div class="wagyu__copy">
+            <span class="num">II</span>
+            <h3>Selected Cuts <em>希少部位</em></h3>
+            <p>Misuji, zabuton, rib cap. Lesser-known cuts, each trimmed to show its own texture: tender, dense, or richly juicy.</p>
+          </div>
+        </article>
+
+        <article class="wagyu__item wagyu__item--c reveal">
+          <figure class="img-hover"><img src="assets/img/sauce.jpg" alt="Small ceramic dishes of house dipping sauce on a dark wooden table" loading="lazy" width="380" height="300"></figure>
+          <div class="wagyu__copy">
+            <span class="num">III</span>
+            <h3>Seasonal Ingredients <em>旬</em></h3>
+            <p>House tare aged in small batches, salts from the coast, and vegetables that change with the market.</p>
+          </div>
+        </article>
+
+        <article class="wagyu__item wagyu__item--d reveal">
+          <figure class="img-hover"><img src="assets/img/charcoal.jpg" alt="Close view of glowing charcoal beneath a wagyu steak on the grill" loading="lazy" width="520" height="300"></figure>
+          <div class="wagyu__copy">
+            <span class="num">IV</span>
+            <h3>Charcoal Specialties <em>炭火</em></h3>
+            <p>White charcoal burns hot and clean, with almost no smoke of its own. The fat drips, flares, and gives back a faint, sweet aroma.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="disclaimer">* Demo copy. Sourcing, grades and cut availability are placeholders and must be confirmed by the restaurant before launch.</p>
+    </section>
+
+    <!-- ============ SIGNATURE MENU ============ -->
+    <section class="menu section" id="menu">
+      <div class="menu__inner">
+        <header class="menu__head reveal">
+          <p class="label">03 · Signature Menu <span class="label__jp">お品書き</span></p>
+          <h2 class="h-serif">The evening, <em>course by course.</em></h2>
+          <div class="menu__course">
+            <p class="menu__course-name">SUMI Omakase Course <span>おまかせコース</span></p>
+            <p class="menu__course-price">¥12,000 <small>per person · tax incl.</small></p>
+            <p class="menu__course-note">Nine plates guided by the season.</p>
+          </div>
+          <figure class="menu__figure img-hover"><img src="assets/img/detail.jpg" alt="Grill tongs resting in a small ceramic dish of seasoning" loading="lazy" width="330" height="240"></figure>
+        </header>
+
+        <div class="menu__list">
+          <ul>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">01</span>
+              <div class="menu-item__body">
+                <h3>Premium Wagyu Assortment <em>和牛盛り合わせ</em></h3>
+                <p>Five cuts of the day, from lean to richly marbled.</p>
+              </div>
+              <span class="menu-item__price">¥6,800</span>
+            </li>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">02</span>
+              <div class="menu-item__body">
+                <h3>Thick-Cut Beef Tongue <em>厚切り上タン</em></h3>
+                <p>Scored, salted, finished with yuzu and green onion.</p>
+              </div>
+              <span class="menu-item__price">¥3,200</span>
+            </li>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">03</span>
+              <div class="menu-item__body">
+                <h3>Seasonal Wagyu Selection <em>季節の和牛</em></h3>
+                <p>A rare cut chosen by the chef, served with seasonal garnish.</p>
+              </div>
+              <span class="menu-item__price">¥4,500</span>
+            </li>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">04</span>
+              <div class="menu-item__body">
+                <h3>Charcoal-Grilled Sirloin <em>炭火焼きサーロイン</em></h3>
+                <p>Grilled at the table, finished with fresh wasabi and rock salt.</p>
+              </div>
+              <span class="menu-item__price">¥5,800</span>
+            </li>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">05</span>
+              <div class="menu-item__body">
+                <h3>Wagyu Sukiyaki-Style <em>焼きすき</em></h3>
+                <p>Thin sirloin, briefly seared, dipped in whipped egg yolk.</p>
+              </div>
+              <span class="menu-item__price">¥3,900</span>
+            </li>
+            <li class="menu-item reveal">
+              <span class="menu-item__no">06</span>
+              <div class="menu-item__body">
+                <h3>Seasonal Japanese Dessert <em>季節の甘味</em></h3>
+                <p>A small, quiet ending. Changes monthly.</p>
+              </div>
+              <span class="menu-item__price">¥1,200</span>
+            </li>
+          </ul>
+          <div class="menu__foot reveal">
+            <button class="link-arrow" type="button" data-demo="full-menu">View the Full Menu</button>
+            <p class="disclaimer">Illustrative demo prices. Actual dishes, prices, allergens and availability must be confirmed by the restaurant before launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE (scrollytelling) ============ -->
+    <section class="story" id="experience" aria-label="The SUMI experience">
+      <div class="story__sticky">
+        <div class="story__frames" aria-hidden="true">
+          <img class="story__frame is-active" src="assets/img/story-charcoal.jpg" alt="" loading="lazy">
+          <img class="story__frame" src="assets/img/story-wagyu.jpg" alt="" loading="lazy">
+          <img class="story__frame" src="assets/img/story-fire.jpg" alt="" loading="lazy">
+          <img class="story__frame" src="assets/img/story-craft.jpg" alt="" loading="lazy">
+        </div>
+        <div class="story__shade" aria-hidden="true"></div>
+        <div class="story__progress" aria-hidden="true"><i></i></div>
+        <div class="story__counter" aria-hidden="true"><span id="storyNo">01</span> / 04</div>
+      </div>
+
+      <div class="story__steps">
+        <article class="story__step" data-step="0">
+          <p class="label">The Experience · 01</p>
+          <h2 class="h-jp">炭 <small>Charcoal</small></h2>
+          <p>It begins before you arrive. Binchotan is lit an hour ahead, until it glows evenly and burns almost without flame.</p>
+        </article>
+        <article class="story__step" data-step="1">
+          <p class="label">The Experience · 02</p>
+          <h2 class="h-jp">肉 <small>Wagyu</small></h2>
+          <p>Each cut is sliced only when you are seated, so the fat stays cool and the texture stays exactly as it should.</p>
+        </article>
+        <article class="story__step" data-step="2">
+          <p class="label">The Experience · 03</p>
+          <h2 class="h-jp">火 <small>Fire</small></h2>
+          <p>A few seconds per side. Your server will guide the first piece, then leave the rhythm to you.</p>
+        </article>
+        <article class="story__step" data-step="3">
+          <p class="label">The Experience · 04</p>
+          <h2 class="h-jp">技 <small>Craft</small></h2>
+          <p>Fire, cut and timing, joined by a single motion. That moment is what we have built the evening around.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ DINING ============ -->
+    <section class="dining section section--walnut" id="dining">
+      <header class="section-head section-head--split reveal">
+        <div>
+          <p class="label">04 · Dining <span class="label__jp">空間</span></p>
+          <h2 class="h-serif">Quiet rooms, <em>warm wood, low light.</em></h2>
+        </div>
+        <p class="section-head__note">Dark walnut, stone and paper lanterns. Every table has its own grill and its own hush, whether it is a first date or an important dinner with clients.</p>
+      </header>
+
+      <div class="dining__gallery">
+        <figure class="dining__img dining__img--tall reveal-img img-hover">
+          <div class="parallax" data-speed="0.06"><img src="assets/img/poster.jpg" alt="Grill table with wagyu, sauces and charcoal, set on dark wood" loading="lazy" width="1280" height="720"></div>
+          <figcaption>Grill tables <span>焼台</span></figcaption>
+        </figure>
+        <figure class="dining__img dining__img--small reveal-img img-hover">
+          <img src="assets/img/table.jpg" alt="Detail of a dark wooden table with small ceramic dishes" loading="lazy" width="420" height="420">
+          <figcaption>Warm wood <span>木</span></figcaption>
+        </figure>
+        <div class="dining__private reveal">
+          <span class="num num--big">個室</span>
+          <h3>Private Dining &amp; Occasions</h3>
+          <p>Private rooms are available for anniversaries, celebrations and business dinners. Tell us the occasion when you reserve, and we will prepare the evening around it.</p>
+          <p class="disclaimer">Room types, capacities and facilities are placeholders, to be supplied by the restaurant.</p>
+          <a href="#reserve" class="link-arrow">Enquire about a private room</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="reserve" id="reserve">
+      <div class="reserve__inner reveal">
+        <p class="label">05 · Reservation <span class="label__jp">ご予約</span></p>
+        <h2 class="reserve__title"><span class="h-jp">特別な夜を、<br class="br-sp">炭火とともに。</span><em>Save a seat by the fire.</em></h2>
+        <p class="reserve__lead">Seating is intentionally limited. We recommend reserving at least a week ahead, and earlier for private rooms and weekend evenings.</p>
+        <button class="btn btn--dark" type="button" data-demo="reserve">Request a Reservation</button>
+
+        <dl class="reserve__info">
+          <div><dt>Telephone</dt><dd>042-000-0000 <span class="ph">placeholder</span></dd></div>
+          <div><dt>Dinner</dt><dd>17:30 – 23:00 (L.O. 22:00) <span class="ph">placeholder</span></dd></div>
+          <div><dt>Closed</dt><dd>Mondays <span class="ph">placeholder</span></dd></div>
+        </dl>
+        <p class="disclaimer">This is a concept website. No booking system is connected; actual reservation details must be supplied by the restaurant.</p>
+      </div>
+    </section>
+
+    <!-- ============ ACCESS ============ -->
+    <section class="access section" id="access">
+      <div class="access__grid">
+        <div class="access__text reveal">
+          <p class="label">06 · Access <span class="label__jp">アクセス</span></p>
+          <h2 class="h-serif">Find us in <em>Hachioji.</em></h2>
+          <dl class="access__list">
+            <div><dt>Address</dt><dd>〒192-0000 東京都八王子市〇〇町 0-0-0<br><span class="muted">0-0-0 ___-machi, Hachioji, Tokyo</span> <span class="ph">placeholder</span></dd></div>
+            <div><dt>Hours</dt><dd>Tue – Sun · 17:30 – 23:00 <span class="ph">placeholder</span></dd></div>
+            <div><dt>Station</dt><dd>A short walk from JR Hachioji Station <span class="ph">to be verified</span></dd></div>
+          </dl>
+          <button class="link-arrow" type="button" data-demo="directions">Get Directions</button>
+        </div>
+        <div class="access__map reveal-img" role="img" aria-label="Map placeholder. A real map will appear once the restaurant's address is supplied.">
+          <svg viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g stroke="currentColor" fill="none" stroke-width="1" opacity=".35">
+              <path d="M-10 300 C 120 280, 220 330, 340 290 S 520 220, 620 250"/>
+              <path d="M-10 140 L 620 180"/>
+              <path d="M180 -10 L 230 460"/>
+              <path d="M420 -10 C 400 120, 450 260, 410 460"/>
+              <path d="M-10 410 L 620 360" opacity=".5"/>
+              <path d="M60 -10 L 110 460" opacity=".5"/>
+            </g>
+            <g stroke="currentColor" stroke-width=".5" opacity=".12">
+              <path d="M0 50h600M0 100h600M0 200h600M0 250h600M0 350h600M0 400h600M50 0v450M150 0v450M250 0v450M350 0v450M450 0v450M550 0v450"/>
+            </g>
+          </svg>
+          <div class="access__pin"><i></i><span>SUMI 炭</span></div>
+          <p class="access__mapnote">Map placeholder · location to be supplied</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__kanji" aria-hidden="true">炭</span>
+        <p class="footer__word">SUMI</p>
+        <p class="footer__statement">Japanese wagyu, white charcoal, and the patience between them.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#philosophy">Our Philosophy</a>
+        <a href="#wagyu">The Wagyu</a>
+        <a href="#menu">Menu</a>
+        <a href="#dining">Dining</a>
+        <a href="#access">Access</a>
+        <a href="#reserve">Reservation</a>
+      </nav>
+      <div class="footer__contact">
+        <p>042-000-0000 <span class="ph">placeholder</span></p>
+        <p>hello@example.com <span class="ph">placeholder</span></p>
+        <p><button class="link-plain" type="button" data-demo="instagram">Instagram</button> <span class="ph">placeholder</span></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 SUMI 炭. A fictional restaurant, created as a portfolio concept.</p>
+      <a href="#top" class="footer__top-link">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <!-- Demo pop-up (used instead of fake booking or fake links) -->
+  <dialog class="demo-dialog" id="demoDialog" aria-labelledby="demoTitle">
+    <p class="label">Concept Demo</p>
+    <h2 id="demoTitle">—</h2>
+    <p id="demoText">—</p>
+    <form method="dialog"><button class="btn btn--light" type="submit">Close</button></form>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

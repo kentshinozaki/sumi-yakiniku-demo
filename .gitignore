@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+.wrangler/
+node_modules/
+*.zip
+# Original source video and the old back-and-forth version (not used by the site)
+Yakiniku vidoe.mp4
+assets/video/sumi-hero.mp4

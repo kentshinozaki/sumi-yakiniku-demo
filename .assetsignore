@@ -1,0 +1,9 @@
+.git
+.gitignore
+.assetsignore
+.claude
+.wrangler
+.DS_Store
+wrangler.jsonc
+Yakiniku vidoe.mp4
+assets/video/sumi-hero.mp4
