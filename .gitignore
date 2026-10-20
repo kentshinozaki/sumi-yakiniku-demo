@@ -6,3 +6,5 @@ node_modules/
 # Original source video and the old back-and-forth version (not used by the site)
 Yakiniku vidoe.mp4
 assets/video/sumi-hero.mp4
+# Kent's original full-size images (web copies live in assets/img)
+hf_*.png
