@@ -24,15 +24,24 @@
   window.matchMedia('(min-width: 961px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
 
   // 3. Hero video: two copies take turns with a crossfade, so the smoke only ever rises.
-  //    Paused for people who prefer less motion, and when off-screen.
+  //    It always plays by itself, silently. Paused only while it's off-screen.
   const reel = document.querySelectorAll('.hero__video');
   if (reel.length === 2) {
     const FADE = 1.4; // seconds, matches the CSS transition
     let current = reel[0], next = reel[1];
 
+    // Browsers only allow autoplay for muted, inline videos, so make sure of both
+    reel.forEach((v) => { v.muted = true; v.defaultMuted = true; v.playsInline = true; v.removeAttribute('controls'); });
+
+    // If the browser blocks autoplay (e.g. iPhone Low Power Mode), try again on the
+    // visitor's first touch, click, scroll or key press
+    const retryEvents = ['touchstart', 'pointerdown', 'scroll', 'keydown'];
+    const retry = () => { current.play().then(() => retryEvents.forEach((e) => window.removeEventListener(e, retry))).catch(() => {}); };
+    const play = (v) => v.play().catch(() => retryEvents.forEach((e) => window.addEventListener(e, retry, { passive: true })));
+
     const swap = () => {
       next.currentTime = 0;
-      next.play().catch(() => {});
+      play(next);
       next.classList.add('is-active');
       current.classList.remove('is-active');
       [current, next] = [next, current];
@@ -43,11 +52,11 @@
     // Let the faded-out copy finish quietly, then stop it
     reel.forEach((v) => v.addEventListener('ended', () => { if (v !== current) v.pause(); }));
 
-    if (reduceMotion) { current.removeAttribute('autoplay'); current.pause(); }
+    play(current);
     new IntersectionObserver(([entry]) => {
-      if (reduceMotion) return;
-      entry.isIntersecting ? current.play().catch(() => {}) : reel.forEach((v) => v.pause());
+      entry.isIntersecting ? play(current) : reel.forEach((v) => v.pause());
     }).observe(reel[0].parentElement);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) play(current); });
   }
 
   // 4. Fade / slide elements in as they enter the screen

@@ -222,6 +222,13 @@ ul, ol { list-style: none; padding: 0; }
   opacity: 0; transition: opacity 1.4s ease-in-out;
 }
 .hero__video.is-active { opacity: 1; }
+/* Never show the browser's own play / start buttons on the background video */
+.hero__video::-webkit-media-controls,
+.hero__video::-webkit-media-controls-panel,
+.hero__video::-webkit-media-controls-start-playback-button,
+.hero__video::-webkit-media-controls-overlay-play-button,
+.hero__video::-webkit-media-controls-play-button { display: none !important; -webkit-appearance: none; opacity: 0 !important; }
+.hero__video { pointer-events: none; }
 @keyframes heroIn { to { transform: scale(1.02); opacity: 1; } }
 .hero__shade {
   position: absolute; inset: 0;

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -56,10 +56,10 @@
       <div class="hero__media">
         <!-- Two copies of the same forward-only clip take turns, with a soft fade between them, so the smoke keeps rising and never plays backward. The poster shows while it loads. -->
         <div class="hero__reel">
-          <video class="hero__video is-active" autoplay muted playsinline preload="auto" poster="assets/img/poster.jpg" aria-hidden="true">
+          <video class="hero__video is-active" autoplay muted playsinline webkit-playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="assets/img/poster.jpg" aria-hidden="true">
             <source src="assets/video/sumi-hero-loop.mp4" type="video/mp4">
           </video>
-          <video class="hero__video" muted playsinline preload="auto" aria-hidden="true">
+          <video class="hero__video" muted playsinline webkit-playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="assets/img/poster.jpg" aria-hidden="true">
             <source src="assets/video/sumi-hero-loop.mp4" type="video/mp4">
           </video>
         </div>
@@ -390,6 +390,6 @@
     <form method="dialog"><button class="btn btn--light" type="submit">Close</button></form>
   </dialog>
 
-  <script src="js/main.js?v=2" defer></script>
+  <script src="js/main.js?v=3" defer></script>
 </body>
 </html>
